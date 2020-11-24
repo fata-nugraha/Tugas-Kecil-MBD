@@ -1,7 +1,7 @@
 # Tugas Kecil IF3140 Manajemen Basis Data
-Release: 24 November 2020
+Release: Selasa, 24 November 2020
 
-Deadline: 1 Desember 2020
+Deadline: Kamis, 3 Desember 2020
 
 Tugas bersifat individu
 
