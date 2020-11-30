@@ -38,6 +38,6 @@ Laporan:
 3. Untuk modul 1-4, tunjukkan bahwa user yang menjalankan query adalah user yang sesuai (dapat menggunakan \conninfo). Tuliskan juga query yang Anda gunakan untuk setiap langkah dan hasil eksekusinya
 
 Format nama file laporan IF3140_TucilMBD_K0X_NIM, upload ke https://driveuploader.com/upload/l5oPYUzW6G/<br>
-Selain dicantumkan di laporan, submit juga host ke https://docs.google.com/spreadsheets/d/1F5jI_V2VN7ifs-UbFBqc4ngKPBg2QUjuM1jnchyFzHw/edit
+Selain dicantumkan di laporan, submit juga host ke https://forms.gle/bGAoDLsaw4SB6EyA6
 
 Note: Penilaian akan dilakukan dengan bantuan script, file terlampir adalah __bagian__ dari script yang akan digunakan. Pastikan Anda mengikuti petunjuk yang tersedia dengan baik agar tidak ada kesalahan teknis saat proses penilaian
