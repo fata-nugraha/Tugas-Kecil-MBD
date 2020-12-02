@@ -1,7 +1,7 @@
 # Tugas Kecil IF3140 Manajemen Basis Data
 Release: Selasa, 24 November 2020
 
-Deadline: Kamis, 3 Desember 2020
+Deadline: Kamis, 3 Desember 2020 23:59
 
 Tugas bersifat individu
 
@@ -38,6 +38,7 @@ Laporan:
 3. Untuk modul 1-4, tunjukkan bahwa user yang menjalankan query adalah user yang sesuai (dapat menggunakan \conninfo). Tuliskan juga query yang Anda gunakan untuk setiap langkah dan hasil eksekusinya
 
 Format nama file laporan IF3140_TucilMBD_K0X_NIM, upload ke https://driveuploader.com/upload/l5oPYUzW6G/<br>
+__Laporan yang disubmit setelah deadline tidak akan diperiksa__<br>
 Selain dicantumkan di laporan, submit juga host ke https://forms.gle/bGAoDLsaw4SB6EyA6<br>
 Pastikan host yang disubmit ke form bisa diconnect dengan script python di repo ini
 
