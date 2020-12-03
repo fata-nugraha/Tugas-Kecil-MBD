@@ -23,7 +23,7 @@ Modul 0.2:
 7. `sudo nano /etc/postgresql/13/main/postgresql.conf`, tekan f6 (search), cari listen_address, remove # di awal line lalu ganti `'localhost'` menjadi `'*'`
 8. `sudo service postgresql restart`
 9. `sudo -u postgres psql` untuk masuk ke database as admin
-10. Kerjakan modul 1-4, lalu coba jalankan script python dengan host `<IP address>`
+10. Kerjakan modul 1-4, lalu coba jalankan script python dengan address `<IP address>`
 
 Modul 1 (user admin, bisa menggunakan admin default, tidak perlu membuat user baru):
 1. Buat database __mbd__ lalu buat tabel __penilaian__ (nim int, nama varchar, nilai int, indeks varchar)
