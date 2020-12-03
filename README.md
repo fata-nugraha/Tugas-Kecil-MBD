@@ -9,7 +9,7 @@ Modul 0.1:
 1. Masuk ke https://portal.azure.com/ menggunakan akun NIM@office.itb.ac.id. Pilih "Access student benefit" jika diminta (tidak perlu credit card)
 2. Search virtual machine, lalu pilih add -> virtual machine
 3. Create new resource group (nama bebas), virtual machine name (bebas), region southeast-asia (optional, recommended), image Ubuntu Server 18.04 LTS - Gen1, size B1s
-4. Authentication type password, <username> dan <password> bebas (akan dipakai)
+4. Authentication type password, `<username>` dan `<password>` bebas (akan dipakai)
 5. Public inbound ports: Allow selected ports, pilih yang ssh (22)
 6. Review + create, lalu klik Create
 
