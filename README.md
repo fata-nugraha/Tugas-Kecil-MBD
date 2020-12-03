@@ -19,7 +19,7 @@ Modul 0.2:
 3. Buka page VM lagi, di Settings -> Networking, Add inbound port rule, Destination port ranges 5432, name bebas, klik Add
 4. Di command prompt (Windows)/terminal (Linux), `ssh <username>@<IP address>` untuk masuk ke VM, lalu input password
 5. Copy-paste script yang ada di https://www.postgresql.org/download/linux/ubuntu/ ke VM
-6. `sudo nano /etc/postgresql/13/main/pg_hba.conf` lalu tambahkan `host all all 0.0.0.0/0 md5` di bagian akhir file, Ctrl+X -> y -> enter untuk save file
+6. `sudo nano /etc/postgresql/13/main/pg_hba.conf`, ganti `local all all peer` menjadi `local all all md5` lalu tambahkan `host all all 0.0.0.0/0 md5` di bagian akhir file, Ctrl+X -> y -> enter untuk save file
 7. `sudo nano /etc/postgresql/13/main/postgresql.conf`, tekan f6 (search), cari listen_address, remove # di awal line lalu ganti `'localhost'` menjadi `'*'`
 8. `sudo service postgresql restart`
 9. `sudo -u postgres psql` untuk masuk ke database as admin
