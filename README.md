@@ -5,13 +5,24 @@ Deadline: Kamis, 3 Desember 2020 23:59 (ada problem di scalegrid, deadline diund
 
 Tugas bersifat individu
 
-Modul 0:
-1. Buat akun baru di https://scalegrid.io/, emailnya bebas (bisa menggunakan [yopmail](http://www.yopmail.com/en/) kalau perlu)
-2. Buat deployment postgresql baru<br><br>
-  Cloud profile (optional, recommended): AWS Singapore / Azure Singapore / GCP asia-southeast2 (Jakarta)<br>
-  Firewall: Set ke 0.0.0.0/0, lalu klik "Ignore and Proceed"<br>
-  Opsi lainnya dapat diabaikan<br>
-  Setup deployment butuh waktu sekitar 30-45 menit<br>
+Modul 0.1:
+1. Masuk ke https://portal.azure.com/ menggunakan akun office
+2. Search virtual machine, lalu pilih add -> virtual machine
+3. Create new resource group (nama bebas), virtual machine name (bebas), region southeast-asia (optional, recommended), image Ubuntu Server 18.04 LTS - Gen1, size B1s
+4. Authentication type password, <username> dan <password> bebas (akan dipakai)
+5. Public inbound ports: Allow selected ports, pilih yang ssh (22)
+6. Review + create, lalu klik Create
+
+Modul 0.2:
+1. Klik Go to resource (atau klik home lalu buka VMnya di recent resources), klik IP address lalu ubah menjadi static
+2. Buka page VM lagi, di Settings -> Networking, Add inbound port rule, Destination port ranges 5432, name bebas, klik Add
+3. Di command prompt (Windows)/terminal (Linux), `ssh <username>@<IP address>` untuk masuk ke VM, lalu input password
+4. Copy-paste script yang ada di https://www.postgresql.org/download/linux/ubuntu/ di VM
+5. `sudo nano /etc/postgresql/13/main/pg_hba.conf` lalu tambahkan `host all all 0.0.0.0/0 md5` di bagian akhir file, Ctrl+X -> y -> enter untuk save file
+6. `sudo nano /etc/postgresql/13/main/postgresql.conf`, klik f6 (search), cari listen_address, remove # di awal line lalu ganti `localhost` menjadi `*`
+7. `sudo service postgresql restart`
+8. `sudo -u postgres psql` untuk masuk ke database as admin
+9. Kerjakan modul 1-4, lalu coba jalankan script python dengan host `<IP address>`
 
 Modul 1 (user admin, bisa menggunakan admin default, tidak perlu membuat user baru):
 1. Buat database __mbd__ lalu buat tabel __penilaian__ (nim int, nama varchar, nilai int, indeks varchar)
