@@ -1,7 +1,7 @@
 # Tugas Kecil IF3140 Manajemen Basis Data
 Release: Selasa, 24 November 2020
 
-Deadline: Kamis, 3 Desember 2020 23:59
+Deadline: Kamis, 3 Desember 2020 23:59 (ada problem di scalegrid, deadline diundur)
 
 Tugas bersifat individu
 
